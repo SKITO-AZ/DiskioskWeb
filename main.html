@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISKIOSK : Build your own kiosk on Discord.</title>
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        .section {
+            align-items: center;
+            justify-content:center;
+            display: flex;
+            height: 500px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .template{
+            height: 700px;
+            background: #ff00cc;
+                /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+                /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #333399, #ff00cc);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .introducing {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            font-family: 'Noto Sans KR';
+            font-weight: bold;
+        }
+        .brand {
+            position: absolute;
+            left: 50%;
+            margin-left: -50px !important;  /* 50% of your logo width */
+            display: block;
+        }
+        .navbar{
+            display: flex;
+            height: 30px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            background-color: #2C2F33;
+        }
+        .navi-item{
+            text-align: right;
+            font-size: 16px;
+            font-family: 'Noto Sans KR';
+            color: white;
+        }
+        .navi-menu {
+            display: flex;
+            list-style: none;
+            padding-right: 150px;
+        }
+        .navi-menu li{
+            padding: 8px 40px;
+        }
+        .navi-menu li:hover{
+            background-color: #ff007f;
+            border-radius: 4px;
+        }
+        .navi-logo{
+            padding-left: 150px;
+            font-size: 30px;
+            font-family: 'Anton';
+        }
+        
+        .description{
+            width: 450px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+        .image{
+            box-shadow: 0px 0px 32px #202122;
+            margin: 0;
+        }
+        .title {
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            font-family: 'Anton';
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Noto Sans KR';
+            color: gray;
+        }
+        body{
+            background-color: #2C2F33;
+            margin: 0;
+        }
+        .footer{
+            height: 250px;
+            background-color: #23272A;
+            font-family: 'Anton';
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        .invite-btn {
+            background-color: #7289DA;
+            text-align: center;
+            width: 140px;
+            height: 45px;
+            margin-bottom: 0px;
+            color: white;
+            border: none;
+            box-shadow: 0 4px 16px #7289DA;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            border-color: gray;
+        }
+        .invite-btn:focus{
+            outline: 0;
+        }
+        .invite-btn:hover{
+            cursor: pointer;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navi-logo">
+            <a href="#">DISKIOSK</a>
+        </div>
+        <ul class="navi-menu">
+            <li><a class="navi-item" >이용약관</a></li>
+          <li><a class="navi-item" >슬로건</a></li>
+          <li><a class="navi-item" >API</a></li>
+          <li><a class="navi-item" >관리</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class='main'>
+        <div class='template'>
+            <div class="introducing">
+            <img src="/static/diskiosk.png" alt="" width="400" height="400">
+            </div>
+            <div class='introducing'>
+                디스코드에서 가장 편리한 스토어 봇으로<br>온라인에서 파일을 쉽게 거래해보세요!
+            </div>
+            <div class='introducing'>
+                <button onclick="location.href='https://discord.com/oauth2/authorize?client_id=693795008423264267&permissions=814289&scope=bot'" type="button" class="invite-btn">봇 초대하기
+                </button>
+            </div>
+        </div>
+            
+        </div>
+        <div class='section'>
+            <div class="description">
+                <div class='title'>
+                    Quick start
+                </div>
+                <div class='subtitle'>
+                    디스키오스크에서는 누구나 자신의 디스코드 서버에서 스토어를 차릴 수 있습니다!
+                </div>
+            </div>
+            <img class="image" src="https://mariushosting.com/wp-content/uploads/2019/11/synology-discord-channel-international-users.png" alt="" width=500px height=300px>
+        </div>
+        <div class='section'>
+            <img class="image" src="https://mariushosting.com/wp-content/uploads/2019/11/synology-discord-channel-international-users.png" alt="" width=500px height=300px>
+            <div class="description">
+                <div class='title'>
+                    Add Item
+                </div>
+                <div class='subtitle'>
+                    디스키오스크 스토어에 거래할 아이템을 추가하고 자신의 디스키오스크 스토어 서버를 홍보하여 판매가 될 때까지 기다리세요!
+                </div>
+            </div>
+        </div>
+        <div class='section'>
+            <div class="description">
+                <div class='title'>
+                    Best E-currency for convenience
+                </div>
+                <div class='subtitle'>
+                    디스키오스크에서는 이미 모두가 사용 중인 컬처랜드 문화상품권을 통해 편리하게 거래가 이루어집니다!
+                </div>
+            </div>
+            <img class="image" src="https://mariushosting.com/wp-content/uploads/2019/11/synology-discord-channel-international-users.png" alt="" width=500px height=300px>
+        </div>
+        <div class='section'>
+            <img class="image" src="https://mariushosting.com/wp-content/uploads/2019/11/synology-discord-channel-international-users.png" alt="" width=500px height=300px>
+            <div class="description">
+                <div class='title'>
+                    Auto selling
+                </div>
+                <div class='subtitle'>
+                    디스키오스크 스토어는 자신이 등록한 컬처랜드 계정을 통해 구매자에게 자동으로 아이템이 판매되고 전송됩니다!
+                </div>
+            </div>
+        </div>
+        <div class='section'>
+            <div class="description">
+                <div class='title'>
+                    Commandless system
+                </div>
+                <div class='subtitle'>
+                    디스키오스크에서는 불편한 명령어를 최소한으로 사용하여 사용자에게 정신적으로 편안함을 제공합니다!
+                </div>
+            </div>
+            <img class="image" src="https://mariushosting.com/wp-content/uploads/2019/11/synology-discord-channel-international-users.png" alt="" width=500px height=300px>
+        </div>
+        <div class='section'>
+            <img class="image" src="https://mariushosting.com/wp-content/uploads/2019/11/synology-discord-channel-international-users.png" alt="" width=500px height=300px>
+            <div class="description">
+                <div class='title'>
+                    Web control center(Not yet)
+                </div>
+                <div class='subtitle'>
+                    디스키오스크 웹을 통해 자신이 판매한 아이템의 수익, 재고, 인기 등을 관리하세요!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        © 2021 SKITO All rights reserved.
+    </div>
+</body>
+
+</html>
